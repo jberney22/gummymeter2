@@ -3,9 +3,10 @@ import { ModalComponent } from '../modal/modal.component';
 import { ApiService } from '../../../api/api.service';
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+    selector: 'app-hero',
+    templateUrl: './hero.component.html',
+    styleUrl: './hero.component.scss',
+    standalone: false
 })
 export class HeroComponent {
   @Input() data: any;

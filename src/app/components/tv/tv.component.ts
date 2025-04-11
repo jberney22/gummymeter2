@@ -4,9 +4,10 @@ import { delay } from 'rxjs/operators';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-tv',
-  templateUrl: './tv.component.html',
-  styleUrl: './tv.component.scss'
+    selector: 'app-tv',
+    templateUrl: './tv.component.html',
+    styleUrl: './tv.component.scss',
+    standalone: false
 })
 export class TvComponent {
   tv_data: any[] = [];

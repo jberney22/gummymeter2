@@ -4,9 +4,10 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-movies-info',
-  templateUrl: './movies-info.component.html',
-  styleUrls: ['./movies-info.component.scss']
+    selector: 'app-movies-info',
+    templateUrl: './movies-info.component.html',
+    styleUrls: ['./movies-info.component.scss'],
+    standalone: false
 })
 export class MoviesInfoComponent implements OnInit {
   id!: number;

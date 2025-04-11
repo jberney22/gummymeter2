@@ -4,9 +4,10 @@ import { ApiService } from '../../api/api.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-movie-category',
-  templateUrl: './movie-category.component.html',
-  styleUrls: ['./movie-category.component.scss']
+    selector: 'app-movie-category',
+    templateUrl: './movie-category.component.html',
+    styleUrls: ['./movie-category.component.scss'],
+    standalone: false
 })
 export class MovieCategoryComponent implements OnInit {
 

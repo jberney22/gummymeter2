@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'runtime'
+    name: 'runtime',
+    standalone: false
 })
 export class RuntimePipe implements PipeTransform {
   transform(minutes: number): string {

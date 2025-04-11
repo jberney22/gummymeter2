@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'arrayToList'
+    name: 'arrayToList',
+    standalone: false
 })
 export class ArrayToListPipe implements PipeTransform {
   transform(array: { name: string }[]): string {

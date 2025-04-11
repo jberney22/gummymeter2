@@ -5,9 +5,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
-  selector: 'app-person',
-  templateUrl: './person.component.html',
-  styleUrl: './person.component.scss'
+    selector: 'app-person',
+    templateUrl: './person.component.html',
+    styleUrl: './person.component.scss',
+    standalone: false
 })
 export class PersonComponent {
   id!: number;

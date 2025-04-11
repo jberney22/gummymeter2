@@ -4,9 +4,10 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-tv-info',
-  templateUrl: './tv-info.component.html',
-  styleUrls: ['./tv-info.component.scss']
+    selector: 'app-tv-info',
+    templateUrl: './tv-info.component.html',
+    styleUrls: ['./tv-info.component.scss'],
+    standalone: false
 })
 export class TvInfoComponent implements OnInit {
   id!: number;

@@ -4,9 +4,10 @@ import { ApiService } from '../../api/api.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-tv-category',
-  templateUrl: './tv-category.component.html',
-  styleUrl: './tv-category.component.scss'
+    selector: 'app-tv-category',
+    templateUrl: './tv-category.component.html',
+    styleUrl: './tv-category.component.scss',
+    standalone: false
 })
 export class TvCategoryComponent {
   category!: string;

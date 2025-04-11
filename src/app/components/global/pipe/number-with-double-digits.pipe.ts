@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'numberWithDoubleDigits'
+    name: 'numberWithDoubleDigits',
+    standalone: false
 })
 export class NumberWithDoubleDigitsPipe implements PipeTransform {
   transform(number: number): string {

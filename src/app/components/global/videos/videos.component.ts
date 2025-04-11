@@ -2,9 +2,10 @@ import { Component, Input, ViewChild } from '@angular/core';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
-  selector: 'app-videos',
-  templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.scss']
+    selector: 'app-videos',
+    templateUrl: './videos.component.html',
+    styleUrls: ['./videos.component.scss'],
+    standalone: false
 })
 export class VideosComponent {
   @Input() videosData: any[] = [];

@@ -4,9 +4,10 @@ import { ApiService } from '../../api/api.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-genre',
-  templateUrl: './genre.component.html',
-  styleUrls: ['./genre.component.scss']
+    selector: 'app-genre',
+    templateUrl: './genre.component.html',
+    styleUrls: ['./genre.component.scss'],
+    standalone: false
 })
 export class GenreComponent implements OnInit {
   isLoading: boolean = false;

@@ -5,9 +5,10 @@ import { delay } from 'rxjs/operators';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.scss'],
+    selector: 'app-movies',
+    templateUrl: './movies.component.html',
+    styleUrls: ['./movies.component.scss'],
+    standalone: false
 })
 export class MoviesComponent implements OnInit {
   hero: any;

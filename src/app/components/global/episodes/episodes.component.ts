@@ -4,9 +4,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { ApiService } from '../../../api/api.service';
 
 @Component({
-  selector: 'app-episodes',
-  templateUrl: './episodes.component.html',
-  styleUrl: './episodes.component.scss'
+    selector: 'app-episodes',
+    templateUrl: './episodes.component.html',
+    styleUrl: './episodes.component.scss',
+    standalone: false
 })
 export class EpisodesComponent implements OnInit {
   id!: number;
