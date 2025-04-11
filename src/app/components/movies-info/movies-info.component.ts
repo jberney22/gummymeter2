@@ -44,6 +44,10 @@ export class MoviesInfoComponent implements OnInit {
     this.activeTab = tab;
   }
 
+  showAlert(){
+    alert('sdfgsdfsdfsdfsdf');
+  }
+
   getMovieInfo(id: number) {
     this.apiService.getMovie(id).subscribe((result: any) => {
       this.movie_data = result;

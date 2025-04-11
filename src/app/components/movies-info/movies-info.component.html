@@ -13,6 +13,11 @@
         (click)="setActiveTab('backdrop')">
         Photos
     </button>
+
+    <button type="button" id="review" class="buttonTab" [class.buttonActive]="activeTab === 'review'"
+    (click)="setActiveTab('review')">
+    Review
+</button>
 </div>
 
 
@@ -32,6 +37,20 @@
     <div class="spacing">
         <app-images [backdrops]="backdrops" [posters]="posters"></app-images>
     </div>
+</div>
+
+<div *ngIf="activeTab === 'review'" id="review">
+  <div class="spacing">
+    <div>Test Reviews</div>
+    <button  type="button" class="button button--icon trailer" (click)="showAlert()">
+      <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#fff">
+              <path d="M3 22v-20l18 10-18 10z"></path>
+          </svg>
+      </span>
+      <span class="txt">Watch Trailer</span>
+  </button>
+  </div>
 </div>
 
 
